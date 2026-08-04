@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Chez Royce</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo_royce.png" alt="Chez Royce Logo">
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="collection.html">Collection</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact">
+            <h2>Nous Contacter</h2>
+            <p>Pour toute question ou commande, n'hésitez pas à nous contacter :</p>
+            <ul>
+                <li><strong>Adresse :</strong> 123 Rue de la Paix, 870,Libreville,Gabon</li>
+                <li><strong>Téléphone :</strong> +241 XX XXX XXX</li>
+                <li><strong>Email :</strong> contact@chezroyce.com</li>
+            </ul>
+
+            <section id="contact-form">
+                <h3>Formulaire de Contact</h3>
+                
+                <form class="contact-from">
+
+                    <div class="form-group">
+                        <label for="name">Nom :</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="objet">Objet :</label>
+                        <input type="text" id="objet" name="objet" placeholder="Objet de votre message" required>
+                        <label for="message">Message :</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Envoyer</button>
+                </form>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <img src="images/logo_royce.png" alt="Chez Royce Logo" class="footer-logo">
+        <p>&copy; 2026 Chez Royce. Tous droits réservés.</p>

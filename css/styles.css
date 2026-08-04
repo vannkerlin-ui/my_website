@@ -1,0 +1,192 @@
+/* Reinitialisation des styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #333;
+    color:white;
+
+    padding: 20px 60px
+}
+
+header img {
+    width: 120px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 40px;
+    
+    padding:60px;
+
+}
+
+.hero img {
+    width: 450px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* COLLECTION */
+
+.collection {
+    padding:60px;
+
+}
+
+.collection h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+/* Conteneur Flex */
+
+.produits {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Card produit */
+
+article {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 0 10px 8px rgba(0, 0, 0, .2);
+    padding-bottom: 20px;
+}
+
+article img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+article h3 {
+    margin-top: 15px;
+}
+
+article p {
+    margin: 10px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffee00;
+    color: black;
+}
+
+/* CONTACT */
+
+.contact {
+    background-color: #333;
+    color: white;
+    padding: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input, textarea {
+    padding: 25px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .produits {
+        flex-direction: column;
+        align-items: center;
+    }
+}
